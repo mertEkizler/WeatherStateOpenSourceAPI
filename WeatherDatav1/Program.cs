@@ -25,8 +25,7 @@ try
 
     if (temp != null && weatherState != null)
     {
-        //Console.WriteLine($"The temperature for {city} is {temp} degrees and {weatherState}");
-        Console.WriteLine($"{city}'de hava durumu : {weatherState}, hava sıcaklığı: {temp}");
+        Console.WriteLine($"The temperature for {city} is {temp} degrees and {weatherState}");
         Console.ReadLine();
     }
 }

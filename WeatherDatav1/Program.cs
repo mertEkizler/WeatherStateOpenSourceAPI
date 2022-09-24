@@ -35,7 +35,7 @@ try
 }
 catch (HttpRequestException ex) when (ex.StatusCode == HttpStatusCode.Unauthorized)
 {
-    Console.WriteLine($"XML File could not be found");
+    Console.WriteLine("Invalid API key. Please see http://openweathermap.org/faq#error401 for more info.");
 }
 catch (Exception ex)
 {

@@ -28,6 +28,10 @@ try
         Console.WriteLine($"The temperature for {city} is {temp} degrees and {weatherState}");
         Console.ReadLine();
     }
+    else
+    {
+        throw new ArgumentNullException($"Temp and weatherState should be provide.");
+    }
 }
 catch (HttpRequestException ex) when (ex.StatusCode == HttpStatusCode.Unauthorized)
 {
@@ -38,4 +42,3 @@ catch (Exception ex)
     Console.WriteLine($"Failed, reason : {ex.Message}");
     throw;
 }
-
